@@ -1,0 +1,92 @@
+<!-- 
+author: Shijie Sun
+course: COSC2956
+ -->
+<section class="container">
+    <div class="row bg-light py-5 my-5 text-center">
+        <div> 
+            <img class="d-block mx-auto mb-4" src="https://images.unsplash.com/photo-1588347300869-4e8709274b1b?w=200"
+                alt="" width="150" height="150">
+        </div>
+        <h1 class="brief">
+            <span class="text-wrapper">
+                <span class="letters">My Brief</span>
+            </span>
+        </h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Strong background in graphic (UI/UX) design and project management. Experience with all
+                stages of the development cycle for app & web site.
+                Good at self-learning, completed over 30 online courses during the last 3 years.
+                Joined a Facebook Gaming Development Group since 4 years ago, team up with people who develop games.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">LinkedIn</button> -->
+                <button type="button" class="btn btn-primary btn-lg px-4"><a
+                        href="https://www.instagram.com/jack.sun.794/">instagram</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row bg-light p-5 rounded">
+        <h2>Working Experience</h2>
+        <br>
+        <h5>Freelance UI Designer</h5>
+        <div>
+            Responsible for the art design, creative work and production of the software interface. According to the
+            user groups of various related software, propose innovative and highly attractive creative designs.
+        </div>
+        <br>
+        <h5>Game developer</h5>
+        <div>
+            When I was in college, I got the idea to make my own game. In addition to programming, planning, and art, I
+            need to work as product manager, project manager, creative director and copywriter, business development,
+            and marketing.
+        </div>
+    </div>
+</section>
+<section class="container">
+    <div class="row bg-light p-5 rounded">
+        <h2>Eduction</h2>
+        <br>
+        <h5>Seneca College</h5>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quo accusamus aspernatur, aut
+            dolore
+            hic nam asperiores error pariatur, iure dolorum. Accusantium, nulla perferendis molestias laudantium
+            praesentium maiores dolorem!
+        </div>
+        <br>
+        <h5>Algoma University</h5>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam earum quo accusamus aspernatur, aut
+            dolore
+            hic nam asperiores error pariatur, iure dolorum. Accusantium, nulla perferendis molestias laudantium
+            praesentium maiores dolorem!
+        </div>
+    </div>
+</section>
+
+<script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.brief .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({ loop: true })
+        .add({
+            targets: '.brief .letter',
+            translateY: ["1.1em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+        }).add({
+            targets: '.brief',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+
+</script>

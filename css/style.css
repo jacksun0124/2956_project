@@ -1,0 +1,121 @@
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+div {
+    font-size: 1rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.card .card-body {
+    background-color: rgb(226, 235, 244);
+}
+
+/* .card img {
+    max-height: 150px;
+} */
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn-primary a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-primary:hover a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section:hover row {
+    background-color: #ffffff;
+}
+
+footer .container {
+    text-align: center;
+}
+
+.brief {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+}
+
+.brief .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.brief .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+svg g {
+    fill: cyan;
+    stroke-width: 0;
+    animation: example 8s infinite;
+}
+
+@keyframes example {
+    0% {
+        fill: cyan;
+    }
+    50% {
+        fill: rgb(147, 32, 201);
+    }
+    100% {
+        fill: cyan;
+    }
+}
+
+.aboutme {
+    /* content vertical align */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.my-img{
+    height: 400px;
+    width: 400px;
+    background-image: url("https://images.unsplash.com/photo-1588347300869-4e8709274b1b?w=500");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.about-detail img{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto
+}
